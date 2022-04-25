@@ -24,7 +24,7 @@ def authenticate(password):
 
 def fetch_website(urllib_version, url):
     # Import the requested version of urllib
-    exec(f"import urllib{urllib_version} as urllib", globals())
+    # exec(f"import urllib{urllib_version} as urllib", globals())
     urllib = importlib.import_module(f"urllib{urllib_version}")
     # Fetch and print the requested URL
     http = urllib.PoolManager()
